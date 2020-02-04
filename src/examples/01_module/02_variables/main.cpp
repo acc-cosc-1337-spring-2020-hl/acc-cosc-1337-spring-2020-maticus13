@@ -1,7 +1,16 @@
 #include "vars.h"
+#include <string>
+
+using std::string;
 
 int main() 
 {
+	
+	string name = "John";
+	
+	
+	
+	
 	display_number(10);
 	display_number(20);
 
