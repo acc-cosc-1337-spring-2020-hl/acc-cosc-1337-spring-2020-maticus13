@@ -1,6 +1,5 @@
 #include "loops.h"
-#include <iostream>
-using std::cout;
+
 /*
 WITH LOOP OF YOUR CHOICE:
 Write code for function factorial that accepts an int num
@@ -19,7 +18,6 @@ int funky_factoral(int num)
 
 	for (int i = 1; i <= num ; ++i)
 	{
-		cout << i << "\n";
 		total = total * i;
 	}
 	return total;
