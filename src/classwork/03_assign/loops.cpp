@@ -1,3 +1,6 @@
+#include "loops.h"
+#include <iostream>
+using std::cout;
 /*
 WITH LOOP OF YOUR CHOICE:
 Write code for function factorial that accepts an int num
@@ -10,3 +13,14 @@ returns 120
 
 DON'T FORGET TO WRITE TEST CASE.  See file loop_test.cpp
 */
+int funky_factoral(int num)
+{
+	int total = 1;
+
+	for (int i = 1; i <= num ; ++i)
+	{
+		cout << i << "\n";
+		total = total * i;
+	}
+	return total;
+}
