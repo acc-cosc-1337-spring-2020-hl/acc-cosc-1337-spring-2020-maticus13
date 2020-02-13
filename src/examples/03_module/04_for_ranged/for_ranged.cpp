@@ -2,7 +2,7 @@
 #include<iostream>
 #include<vector>
 
-using std::vector;
+using std::vector; using std::cout;
 
 /*
 Write code for loop_string_w_index that accepts a string parameter.
@@ -15,6 +15,16 @@ e
 s
 t
 */
+void loops_string_index(const string & str)
+{
+	int i;
+
+	for (int i = 0; i < str.length(); ++i)
+	{
+		cout << str[i] << "\n";
+	}
+}
+
 
 
 /*
@@ -28,6 +38,13 @@ e
 s
 t
 */
+void loop_string_auto(const string & str)
+{
+	for (auto s : str)
+	{
+		cout << s << "\n";
+	}
+}
 
 
 void loop_vector_w_index() 
