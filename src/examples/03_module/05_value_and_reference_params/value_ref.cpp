@@ -7,8 +7,7 @@ The function assigns 20 to num1 and 50 to num2
 */
 void pass_by_val_and_ref(int num1, int num2)
 {
-	int num1 = 20;
-	int num2 = 50;
+	
 }
 
 
