@@ -8,6 +8,14 @@ Return quotient.
 */
 
 
+double get_gc_content(const string str1)
+{
+	for (auto s : str1)
+	{
+		cout << [s] << "\n";
+	}
+	return 0.0;
+}
 
 
 /*
@@ -15,7 +23,10 @@ Write code for function get_reverse_string that
 accepts a string parameter and returns a string reversed.
 */
 
-
+string get_reverse_string(string str2)
+{
+	return string();
+}
 
 /*
 Write prototype for function get_dna_complement that
@@ -28,3 +39,8 @@ c. return string
 
 */
 
+
+string get_dna_complement(string str3)
+{
+	return string();
+}
