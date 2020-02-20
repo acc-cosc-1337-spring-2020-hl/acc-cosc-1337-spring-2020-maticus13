@@ -1,4 +1,5 @@
 #include "dna.h"
+using std::cin; using std::cout;
 /*
 Write code for function get_gc_content that accepts
 a const reference string parameter and returns a double.
@@ -8,13 +9,28 @@ Return quotient.
 */
 
 
+
 double get_gc_content(const string str1)
 {
-	for (auto s : str1)
+	int total;
+	int G_and_C;
+
+	for (int i = 0; i < str1.size(); ++i)
 	{
-		cout << [s] << "\n";
+		if (str1[i] == 'G' || str1[i] == 'C')
+		{
+			total = total + 1;
+			G_and_C = G_and_C + 1;
+		}
+		else
+		{
+			total = total + 1;
+		}
+
 	}
-	return 0.0;
+
+	return G_and_C / total;
+
 }
 
 

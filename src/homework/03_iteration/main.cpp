@@ -10,6 +10,12 @@ DNA string and call either get gc content or get dna complement
 function and display the result. Program runs as long as 
 user enters a y or Y.
 */
+
+
+
+string choice;
+
+
 int main() 
 {
 	do
