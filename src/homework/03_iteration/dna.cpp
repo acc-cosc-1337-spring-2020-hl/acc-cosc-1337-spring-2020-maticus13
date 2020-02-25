@@ -1,4 +1,5 @@
 #include "dna.h"
+#include<algorithm>
 using std::cin; using std::cout;
 /*
 Write code for function get_gc_content that accepts
@@ -41,7 +42,12 @@ accepts a string parameter and returns a string reversed.
 
 string get_reverse_string(string str2)
 {
-	return string();
+	string reverse_dna;
+	for (int i = str2.length() - 1; i >= 0; i--)
+	{
+		reverse_dna = reverse_dna + str2[i];
+	}
+	return reverse_dna;
 }
 
 /*
@@ -58,5 +64,10 @@ c. return string
 
 string get_dna_complement(string str3)
 {
-	return string();
+	str3 = get_reverse_string(str3);
+	replace(str3.begin(), str3.end(), 'A', 'T');
+	replace(str3.begin(), str3.end(), 'T', 'A');
+	replace(str3.begin(), str3.end(), 'G', 'C');
+	replace(str3.begin(), str3.end(), 'C', 'G');
+	return str3;
 }

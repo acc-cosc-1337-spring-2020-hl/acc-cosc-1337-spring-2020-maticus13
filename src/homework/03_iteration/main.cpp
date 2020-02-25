@@ -23,26 +23,29 @@ int main()
 		string main_choice;
 		int function_choice;
 
-		cout << "Enter 1 for GC Content or 2 for DNA complement";
+		cout << "Enter 1 for GC Content or 2 for DNA complement: ";
 		cin >> function_choice;
 		
-		if (function_choice = 1)
+		if (function_choice == 1)
 		{
 			string dna_input;
-			cout << "Enter DNA Sequence";
+			cout << "GC Content -- Enter DNA Sequence: ";
 			cin >> dna_input;
 			cout << get_gc_content(dna_input);
 			
 		}
 		else
 		{
-
+			string dna_input;
+			cout << "DNA complement -- Enter DNA Sequence: ";
+			cin >> dna_input;
+			string reverse_dna = get_reverse_string(dna_input);
 		}
 
 		cout << "Continue?... Enter y for yes";
 		cin >> choice;
 
-	} while (choice == y);
+	} while (choice == "y");
 
 	return 0;
 }
