@@ -39,7 +39,8 @@ int main()
 			string dna_input;
 			cout << "DNA complement -- Enter DNA Sequence: ";
 			cin >> dna_input;
-			string reverse_dna = get_reverse_string(dna_input);
+			string reverse_dna = get_dna_complement(dna_input);
+			cout << reverse_dna;
 		}
 
 		cout << "Continue?... Enter y for yes";

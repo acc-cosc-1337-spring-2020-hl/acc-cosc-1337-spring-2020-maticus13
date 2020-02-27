@@ -1,13 +1,23 @@
 //bank_account.h
+#include<string>
 
 class BankAccount
 {
 public:
 	BankAccount(int b) : balance{ b } {};
-	int get_balance()const {return balance; }
+	int get_balance()const {return balance; } //CONST CANT BE MODIFIED SO THIS MAKES SINCE YO
 	void deposit(int amount);
 	void withdraw(int amount);
+
 private:
 	int balance{ 0 };
-	int num;
+};
+
+class InvalidAmount
+{
+public:
+	InvalidAmount(std::string msg) :message{ msg } {};
+	std::string get_message()const { return message; }
+private:
+	std::string message;
 };

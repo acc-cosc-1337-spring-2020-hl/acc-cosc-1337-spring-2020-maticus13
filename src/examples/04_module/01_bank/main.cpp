@@ -8,5 +8,13 @@ int main()
 	int balance = account.get_balance();
 	cout << "Balance: " << balance;
 
+	try
+	{
+		account.depisot(-10);
+	}
+	catch
+	{
+		cout << e.get_message;
+	}
 	return 0;
 }

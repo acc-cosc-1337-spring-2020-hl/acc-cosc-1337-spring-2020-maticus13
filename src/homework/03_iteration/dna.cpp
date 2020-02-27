@@ -1,5 +1,4 @@
 #include "dna.h"
-#include<algorithm>
 using std::cin; using std::cout;
 /*
 Write code for function get_gc_content that accepts
@@ -65,9 +64,26 @@ c. return string
 string get_dna_complement(string str3)
 {
 	str3 = get_reverse_string(str3);
-	replace(str3.begin(), str3.end(), 'A', 'T');
-	replace(str3.begin(), str3.end(), 'T', 'A');
-	replace(str3.begin(), str3.end(), 'G', 'C');
-	replace(str3.begin(), str3.end(), 'C', 'G');
+
+	for (int i = str3.length() - 1; i >= 0; i--)
+	{
+		if (str3[i] == 'A') 
+		{
+			str3[i] = 'T';
+		}
+		else if (str3[i] == 'T') 
+		{
+			str3[i] = 'A';
+		}
+		else if (str3[i] == 'G') 
+		{
+			str3[i] = 'C';
+		}
+		else if (str3[i] == 'C') 
+		{
+			str3[i] = 'G';
+		}
+	}
+	
 	return str3;
 }
