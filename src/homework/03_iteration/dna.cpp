@@ -12,8 +12,8 @@ Return quotient.
 
 double get_gc_content(const string str1)
 {
-	int total;
-	int G_and_C;
+	int total=0;
+	int G_and_C=0;
 
 	for (int i = 0; i < str1.size(); ++i)
 	{
