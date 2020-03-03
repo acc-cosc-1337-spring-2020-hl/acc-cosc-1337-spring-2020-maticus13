@@ -19,7 +19,7 @@ public:
 } 
 	void set_length();
 	void set_width();
-	void get_area();
+	int get_area();
 private:
 	int width;
 	int length;

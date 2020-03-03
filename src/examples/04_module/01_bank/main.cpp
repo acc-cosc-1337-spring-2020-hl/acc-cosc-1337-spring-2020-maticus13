@@ -10,9 +10,9 @@ int main()
 
 	try
 	{
-		account.depisot(-10);
+		account.deposit(-10);
 	}
-	catch
+	catch(InvalidAmount e)
 	{
 		cout << e.get_message;
 	}

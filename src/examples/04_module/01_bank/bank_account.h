@@ -10,7 +10,7 @@ public:
 	void withdraw(int amount);
 
 private:
-	int balance{ 0 };
+	int balance;
 };
 
 class InvalidAmount
